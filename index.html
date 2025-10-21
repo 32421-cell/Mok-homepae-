@@ -1,211 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Designing a Safe Website - Lesson</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9faff;
-      margin: 0;
-      padding: 20px;
-      color: #222;
-      line-height: 1.6;
-    }
-    header {
-      background-color: #007BFF;
-      color: white;
-      padding: 15px 25px;
-      border-radius: 8px;
-      text-align: center;
-      margin-bottom: 30px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
-    }
-    header h1 {
-      margin: 0;
-      font-weight: 700;
-      font-size: 2rem;
-    }
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      background: white;
-      padding: 25px 40px;
-      border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    }
-    section {
-      margin-bottom: 35px;
-    }
-    h2 {
-      color: #007BFF;
-      margin-bottom: 15px;
-      border-bottom: 2px solid #007BFF;
-      padding-bottom: 5px;
-    }
-    ul {
-      margin-left: 20px;
-      margin-bottom: 15px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 15px;
-      margin-bottom: 20px;
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 10px 15px;
-      text-align: left;
-    }
-    th {
-      background-color: #007BFF;
-      color: white;
-    }
-    label {
-      font-weight: 600;
-      display: block;
-      margin-top: 20px;
-      margin-bottom: 5px;
-    }
-    textarea {
-      width: 100%;
-      height: 80px;
-      padding: 10px;
-      font-size: 1rem;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      resize: vertical;
-      margin-bottom: 20px;
-    }
-    button {
-      background-color: #007BFF;
-      color: white;
-      font-weight: 600;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 1rem;
-      transition: background-color 0.3s ease;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9rem;
-      color: #555;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Designing a Safe Website | Cyber Security Lesson</title>
+<style>
+  body {
+    background-color: #0b0e17;
+    color: #e2e8f0;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: linear-gradient(90deg, #0d1b2a, #1b263b);
+    padding: 20px;
+    text-align: center;
+    color: #5fe3ff;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #5fe3ff;
+  }
+  section {
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+  }
+  h2 {
+    color: #5fe3ff;
+    border-bottom: 1px solid #5fe3ff;
+    padding-bottom: 5px;
+  }
+  .card {
+    background-color: #111827;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(95, 227, 255, 0.2);
+  }
+  ul {
+    line-height: 1.8;
+  }
+  .question {
+    margin-top: 15px;
+  }
+  input, textarea {
+    width: 100%;
+    background-color: #1e293b;
+    color: #fff;
+    border: 1px solid #334155;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+  }
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #0f172a;
+    color: #5fe3ff;
+    margin-top: 20px;
+  }
+</style>
 </head>
 <body>
-
 <header>
-  <h1>Designing a Safe Website</h1>
+  💻 Designing a Safe Website — Cyber Security Lesson
 </header>
 
-<main>
-  <section id="learning-intentions">
-    <h2>Learning Intentions</h2>
+<section>
+  <h2>Learning Intentions</h2>
+  <div class="card">
     <ul>
       <li>Understand what makes a website safe and trustworthy.</li>
       <li>Identify security features and risks.</li>
       <li>Design a mock-up of a secure website homepage.</li>
     </ul>
-  </section>
+  </div>
 
-  <section id="part-1">
-    <h2>Part 1: Understanding Website Safety (10 minutes)</h2>
-    <p><strong>Read the passage carefully:</strong></p>
-    <p>
-      Every website collects some kind of data — your name, password, or payment details.<br />
-      A safe website keeps that data protected through encryption, secure design, and honesty.
-    </p>
+  <h2>Part 1: Understanding Website Safety (10 minutes)</h2>
+  <div class="card">
+    <p>Every website collects some kind of data — your name, password, or payment details.
+    A safe website keeps that data protected through encryption, secure design, and honesty.</p>
     <p><strong>Three key things to look for on a safe website:</strong></p>
     <ol>
       <li>HTTPS in the web address — it means the connection is secure.</li>
       <li>Padlock icon in the address bar.</li>
       <li>Privacy or consent notice explaining how data is used.</li>
     </ol>
-    <p>
-      Unsafe websites might have strange URLs, grammar mistakes, fake pop-ups, or ask for personal details they don’t need.
-    </p>
+    <p>Unsafe websites might have strange URLs, grammar mistakes, fake pop-ups, or ask for personal details they don’t need.</p>
+  </div>
 
-    <form id="task1-form">
-      <label for="q1">1. What are three signs a website is safe?</label>
-      <textarea id="q1" name="q1" placeholder="Write your answer here..." required></textarea>
+  <h3>Task 1: Answer the Questions</h3>
+  <div class="card">
+    <div class="question">
+      <label>1. What are three signs a website is safe?</label>
+      <textarea placeholder="Example: A safe website uses HTTPS, shows a padlock, and has a privacy policy."></textarea>
+    </div>
+    <div class="question">
+      <label>2. What are two signs a website might be unsafe?</label>
+      <textarea placeholder="Example: It has spelling errors or asks for personal info it doesn’t need."></textarea>
+    </div>
+    <div class="question">
+      <label>3. Why is it important for web designers to build secure sites?</label>
+      <textarea placeholder="Example: To protect user data and build trust with visitors."></textarea>
+    </div>
+  </div>
 
-      <label for="q2">2. What are two signs a website might be unsafe?</label>
-      <textarea id="q2" name="q2" placeholder="Write your answer here..." required></textarea>
-
-      <label for="q3">3. Why is it important for web designers to build secure sites?</label>
-      <textarea id="q3" name="q3" placeholder="Write your answer here..." required></textarea>
-    </form>
-  </section>
-
-  <section id="part-2">
-    <h2>Part 2: Cyber Threats Awareness (10 minutes)</h2>
-    <p><strong>Read:</strong></p>
-
-    <table>
-      <thead>
-        <tr>
-          <th>Threat</th>
-          <th>What It Means</th>
-          <th>Example</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Phishing</td>
-          <td>Fake websites or emails trick people into giving passwords.</td>
-          <td>A fake “bank login” page.</td>
-        </tr>
-        <tr>
-          <td>Malware</td>
-          <td>Software that harms your computer or steals data.</td>
-          <td>Clicking a link that installs a virus.</td>
-        </tr>
-        <tr>
-          <td>Weak Passwords</td>
-          <td>Easy to guess, allowing hackers access.</td>
-          <td>“12345” or “password”.</td>
-        </tr>
-      </tbody>
+  <h2>Part 2: Cyber Threats Awareness (10 minutes)</h2>
+  <div class="card">
+    <table style="width:100%; border-collapse:collapse; text-align:left;">
+      <tr style="color:#5fe3ff;">
+        <th>Threat</th>
+        <th>What It Means</th>
+        <th>Example</th>
+      </tr>
+      <tr>
+        <td>Phishing</td>
+        <td>Fake websites or emails trick people into giving passwords.</td>
+        <td>A fake “bank login” page.</td>
+      </tr>
+      <tr>
+        <td>Malware</td>
+        <td>Software that harms your computer or steals data.</td>
+        <td>Clicking a link that installs a virus.</td>
+      </tr>
     </table>
+  </div>
 
-    <form id="task2-form">
-      <label for="q4">1. Define each threat in your own words.</label>
-      <textarea id="q4" name="q4" placeholder="Write your answer here..." required></textarea>
-
-      <label for="q5">2. Explain how a good web designer can help prevent these problems.</label>
-      <textarea id="q5" name="q5" placeholder="Write your answer here..." required></textarea>
-    </form>
-  </section>
-
-  <button onclick="submitAnswers()">Submit Answers</button>
-</main>
+  <h3>Part 3: Design Challenge</h3>
+  <div class="card">
+    <p><strong>Now design your own mock-up of a secure website homepage!</strong></p>
+    <p>Include:</p>
+    <ul>
+      <li>A visible padlock or HTTPS symbol.</li>
+      <li>A privacy notice link.</li>
+      <li>A clean, trustworthy design.</li>
+    </ul>
+    <p>You can draw it on paper, use Canva, Figma, or a whiteboard tool, then present your design to the class.</p>
+  </div>
+</section>
 
 <footer>
-  &copy; 2025 CyberAware Educational Content
+  © 2025 CyberSafe Learning | Created for classroom cybersecurity education
 </footer>
-
-<script>
-  function submitAnswers() {
-    const task1Form = document.getElementById('task1-form');
-    const task2Form = document.getElementById('task2-form');
-
-    if (!task1Form.checkValidity() || !task2Form.checkValidity()) {
-      alert('Please complete all questions before submitting.');
-      return;
-    }
-
-    alert('Thank you for submitting your answers! You can review and revise anytime.');
-  }
-</script>
-
 </body>
 </html>

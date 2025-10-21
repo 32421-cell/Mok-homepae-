@@ -3,279 +3,213 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CyberAware - Protecting You, One Click at a Time</title>
+  <title>Designing a Safe Website - Lesson</title>
   <style>
-    /* Reset & Base */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
     body {
-      background: #f4f4f4;
-      color: #333;
-    }
-
-    /* Container */
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9faff;
+      margin: 0;
       padding: 20px;
+      color: #222;
+      line-height: 1.6;
     }
-
-    /* Header */
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: white;
-      padding: 15px 30px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    /* Logo */
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .logo svg {
-      width: 40px;
-      height: 40px;
-      fill: #007BFF;
-    }
-    .logo h1 {
-      font-size: 1.5rem;
-      color: #007BFF;
-      user-select: none;
-    }
-
-    /* Nav */
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #333;
-      font-weight: 600;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #007BFF;
-    }
-
-    /* Privacy Notice */
-    .privacy-notice {
-      display: flex;
-      align-items: center;
-      font-size: 0.9rem;
-      color: #555;
-      cursor: pointer;
-      gap: 5px;
-    }
-    .privacy-notice svg {
-      width: 16px;
-      height: 16px;
-      fill: #007BFF;
-    }
-
-    /* Hero Section */
-    .hero {
-      background: white;
-      margin-top: 40px;
-      padding: 40px 30px;
+      background-color: #007BFF;
+      color: white;
+      padding: 15px 25px;
       border-radius: 8px;
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      flex-wrap: wrap;
-    }
-    .hero-text {
-      flex: 1 1 350px;
-    }
-    .hero-text h2 {
-      font-size: 2.2rem;
-      margin-bottom: 20px;
-      color: #007BFF;
-    }
-    .hero-text p {
-      font-size: 1.1rem;
+      text-align: center;
       margin-bottom: 30px;
-      line-height: 1.5;
-      color: #444;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
     }
-    .hero-buttons {
-      display: flex;
-      gap: 15px;
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 2rem;
     }
-    .btn-primary {
-      background-color: #007BFF;
-      border: none;
-      padding: 12px 25px;
-      color: white;
-      font-weight: 600;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .btn-primary:hover {
-      background-color: #0056b3;
-    }
-    .btn-secondary {
-      background: transparent;
-      border: 2px solid #007BFF;
-      padding: 10px 23px;
-      color: #007BFF;
-      font-weight: 600;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      text-decoration: none;
-      display: inline-block;
-    }
-    .btn-secondary:hover {
-      background-color: #007BFF;
-      color: white;
-    }
-
-    /* Hero image */
-    .hero-image {
-      flex: 1 1 300px;
-      min-width: 250px;
-    }
-    .hero-image img {
-      width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    /* Features Section */
-    .features {
+    main {
+      max-width: 900px;
+      margin: 0 auto;
       background: white;
-      margin: 40px 0;
-      padding: 30px 25px;
+      padding: 25px 40px;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: space-between;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     }
-    .feature-box {
-      flex: 1 1 300px;
-      background: #e9f2ff;
-      padding: 20px;
-      border-radius: 6px;
-      box-shadow: inset 0 0 5px #007BFF;
+    section {
+      margin-bottom: 35px;
     }
-    .feature-box h3 {
+    h2 {
       color: #007BFF;
       margin-bottom: 15px;
+      border-bottom: 2px solid #007BFF;
+      padding-bottom: 5px;
     }
-    .feature-box p {
-      margin-bottom: 10px;
-      color: #333;
-      line-height: 1.4;
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
     }
-    .feature-box a {
-      color: #004a99;
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      margin-bottom: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px 15px;
+      text-align: left;
+    }
+    th {
+      background-color: #007BFF;
+      color: white;
+    }
+    label {
       font-weight: 600;
-      text-decoration: underline;
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 5px;
+    }
+    textarea {
+      width: 100%;
+      height: 80px;
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      resize: vertical;
+      margin-bottom: 20px;
+    }
+    button {
+      background-color: #007BFF;
+      color: white;
+      font-weight: 600;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
       cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
     }
-    .feature-box a:hover {
-      color: #002f66;
+    button:hover {
+      background-color: #0056b3;
     }
-
-    /* Footer */
     footer {
       text-align: center;
-      padding: 20px 10px;
+      margin-top: 40px;
       font-size: 0.9rem;
-      color: #666;
-      border-top: 1px solid #ddd;
-      user-select: none;
-    }
-
-    /* Responsive */
-    @media (max-width: 700px) {
-      .hero {
-        flex-direction: column;
-      }
-      .features {
-        flex-direction: column;
-      }
+      color: #555;
     }
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo" aria-label="CyberAware logo">
-      <!-- Simple shield + padlock icon SVG -->
-      <svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" >
-        <path d="M32 2L6 14v18c0 16 12 28 26 30 14-2 26-14 26-30V14L32 2zM32 44a6 6 0 1 1 0-12 6 6 0 0 1 0 12z"/>
-        <rect x="28" y="30" width="8" height="12" rx="3" ry="3" fill="white"/>
-      </svg>
-      <h1>CyberAware</h1>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Report a Scam</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="privacy-notice" title="Privacy Notice">
-      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-        <path d="M12 1C8.13 1 5 4.13 5 8v5H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-8a1 1 0 0 0-1-1h-1V8c0-3.87-3.13-7-7-7zm0 2a5 5 0 0 1 5 5v5H7v-5a5 5 0 0 1 5-5z"/>
-      </svg>
-      Privacy Notice
-    </div>
-  </header>
 
-  <main class="container" role="main">
-    <section class="hero" aria-label="Main introduction">
-      <div class="hero-text">
-        <h2>Stay One Step Ahead of Cyber Threats</h2>
-        <p>Learn how to protect yourself online with CyberAware. We provide resources, tools, and tips to keep your digital life safe.</p>
-        <div class="hero-buttons">
-          <a href="#" class="btn-primary" aria-label="Login Securely">Login Securely</a>
-          <a href="#" class="btn-secondary" aria-label="Report a Scam">Report a Scam</a>
-        </div>
-      </div>
-      <div class="hero-image" aria-hidden="true">
-        <img src="https://images.unsplash.com/photo-1581093588401-254213d4d324?auto=format&fit=crop&w=600&q=80" alt="Person working on laptop with digital security graphics"/>
-      </div>
-    </section>
+<header>
+  <h1>Designing a Safe Website</h1>
+</header>
 
-    <section class="features" aria-label="Security awareness features">
-      <div class="feature-box" tabindex="0">
-        <h3>5 Ways to Spot a Phishing Email</h3>
-        <p>Learn how to identify phishing scams before they trick you. Check out our detailed guide.</p>
-        <a href="#" aria-label="Read more about spotting phishing emails">Read More</a>
-      </div>
-      <div class="feature-box" tabindex="0">
-        <h3>Check Your Password Strength</h3>
-        <p>Use our free tool to see if your passwords are strong enough to protect your accounts.</p>
-        <a href="#" aria-label="Test your password strength">Try It Now</a>
-      </div>
-    </section>
-  </main>
+<main>
+  <section id="learning-intentions">
+    <h2>Learning Intentions</h2>
+    <ul>
+      <li>Understand what makes a website safe and trustworthy.</li>
+      <li>Identify security features and risks.</li>
+      <li>Design a mock-up of a secure website homepage.</li>
+    </ul>
+  </section>
 
-  <footer>
-    &copy; 2025 CyberAware. All rights reserved.
-  </footer>
+  <section id="part-1">
+    <h2>Part 1: Understanding Website Safety (10 minutes)</h2>
+    <p><strong>Read the passage carefully:</strong></p>
+    <p>
+      Every website collects some kind of data — your name, password, or payment details.<br />
+      A safe website keeps that data protected through encryption, secure design, and honesty.
+    </p>
+    <p><strong>Three key things to look for on a safe website:</strong></p>
+    <ol>
+      <li>HTTPS in the web address — it means the connection is secure.</li>
+      <li>Padlock icon in the address bar.</li>
+      <li>Privacy or consent notice explaining how data is used.</li>
+    </ol>
+    <p>
+      Unsafe websites might have strange URLs, grammar mistakes, fake pop-ups, or ask for personal details they don’t need.
+    </p>
+
+    <form id="task1-form">
+      <label for="q1">1. What are three signs a website is safe?</label>
+      <textarea id="q1" name="q1" placeholder="Write your answer here..." required></textarea>
+
+      <label for="q2">2. What are two signs a website might be unsafe?</label>
+      <textarea id="q2" name="q2" placeholder="Write your answer here..." required></textarea>
+
+      <label for="q3">3. Why is it important for web designers to build secure sites?</label>
+      <textarea id="q3" name="q3" placeholder="Write your answer here..." required></textarea>
+    </form>
+  </section>
+
+  <section id="part-2">
+    <h2>Part 2: Cyber Threats Awareness (10 minutes)</h2>
+    <p><strong>Read:</strong></p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Threat</th>
+          <th>What It Means</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Phishing</td>
+          <td>Fake websites or emails trick people into giving passwords.</td>
+          <td>A fake “bank login” page.</td>
+        </tr>
+        <tr>
+          <td>Malware</td>
+          <td>Software that harms your computer or steals data.</td>
+          <td>Clicking a link that installs a virus.</td>
+        </tr>
+        <tr>
+          <td>Weak Passwords</td>
+          <td>Easy to guess, allowing hackers access.</td>
+          <td>“12345” or “password”.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <form id="task2-form">
+      <label for="q4">1. Define each threat in your own words.</label>
+      <textarea id="q4" name="q4" placeholder="Write your answer here..." required></textarea>
+
+      <label for="q5">2. Explain how a good web designer can help prevent these problems.</label>
+      <textarea id="q5" name="q5" placeholder="Write your answer here..." required></textarea>
+    </form>
+  </section>
+
+  <button onclick="submitAnswers()">Submit Answers</button>
+</main>
+
+<footer>
+  &copy; 2025 CyberAware Educational Content
+</footer>
+
+<script>
+  function submitAnswers() {
+    const task1Form = document.getElementById('task1-form');
+    const task2Form = document.getElementById('task2-form');
+
+    if (!task1Form.checkValidity() || !task2Form.checkValidity()) {
+      alert('Please complete all questions before submitting.');
+      return;
+    }
+
+    alert('Thank you for submitting your answers! You can review and revise anytime.');
+  }
+</script>
+
+</body>
+</html>
+
 </body>
 </html>
 
